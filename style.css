@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #222;
+}
+.card{
+    width: 100%;
+    max-width: 450px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 40px 35px;
+    text-align: center;
+    margin-top: 20px;
+
+}
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 50px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+.search button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+.search button img{
+    width: 20px;
+    
+}
+.weather-icon{
+    width: 140px;
+    margin-top: 30px;
+}
+.weather h1{
+    font-size: 60px;
+    font-weight: 500;
+}
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+.detail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.col img{
+    width: 60px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.humidity, .wind{
+    font-size: 16px;
+    margin-top: 22px;
+}
+.weather{
+    display: none;
+}
+.error{
+    text-align: left;
+    margin-right: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+.copyright{
+    font-size: 6px;
+    color: #fff;
+    padding-top: 56px;
+    text-align: center;
+    margin-bottom: 0;
+    background: transparent;
+}
+.container span1{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 10px;
+    position: fixed;
+    bottom: -180px;
+    z-index: -1;
+    background-color: #04edf98a;
+    box-shadow: 0 0 50px #44a082,
+                0 0 100px #01f4a7,
+                0 0 150px #44a082,
+                0 0 200px #01f4a7;
+    animation: animate 5s linear infinite;
+}
+.container span1:nth-child(1){
+    left: 60px;
+    animation-delay: 0.6s;
+}
+.container span1:nth-child(2){
+    left: 10%;
+    animation-delay: 3s;
+    width: 10px;
+    height: 10px;
+}
+.container span1:nth-child(3){
+    left: 20%;
+    animation-delay: 2s;
+}
+.container span1:nth-child(4){
+    left: 30%;
+    animation-delay: 5s;
+    width: 20px;
+    height: 20px;
+}
+.container span1:nth-child(5){
+    left: 40%;
+    animation-delay: 1s;
+}
+.container span1:nth-child(6){
+    left: 50%;
+    animation-delay: 7s;
+}
+.container span1:nth-child(7){
+    left: 60%;
+    animation-delay: 6s;
+    width: 15px;
+    height: 15px;
+}
+.container span1:nth-child(8){
+    left: 70%;
+    animation-delay: 8s;
+}
+.container span1:nth-child(9){
+    left: 80%;
+    animation-delay: 6s;
+    width: 20px;
+    height: 20px;
+}
+.container span1:nth-child(10){
+    left: 90%;
+    animation-delay: 4s;
+}
+.container span1:nth-child(11){
+    left: 60px;
+    animation-delay: 0.6s;
+}
+.container span1:nth-child(12){
+    left: 10%;
+    animation-delay: 3s;
+    width: 30px;
+    height: 30px;
+}
+.container span1:nth-child(13){
+    left: 20%;
+    animation-delay: 2s;
+}
+.container span1:nth-child(14){
+    left: 30%;
+    animation-delay: 5s;
+    width: 25px;
+    height: 25px;
+}
+.container span1:nth-child(15){
+    left: 40%;
+    animation-delay: 1s;
+}
+.container span1:nth-child(16){
+    left: 50%;
+    animation-delay: 7s;
+}
+.container span1:nth-child(17){
+    left: 60%;
+    animation-delay: 6s;
+    width: 30px;
+    height: 30px;
+}
+.container span1:nth-child(18){
+    left: 70%;
+    animation-delay: 8s;
+}
+.container span1:nth-child(19){
+    left: 80%;
+    animation-delay: 6s;
+    width: 10px;
+    height: 10px;
+}
+.container span1:nth-child(20){
+    left: 90%;
+    animation-delay: 4s;
+}
+@keyframes animate{
+    0%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    80%{
+        opacity: .7;
+    }
+    100%{
+        transform: translateY(-800px) rotate(360deg);
+        opacity: 0;
+    }
+}
+.title{
+    text-align: center;
+    color: #fff;
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: 600;
+}
+@media only screen and (max-width: 600px){
+    .card{
+        width: 70%;
+        max-width: 450px;
+        background: linear-gradient(135deg, #00feba, #5b548a);
+        color: #fff;
+        margin: 100px auto 0;
+        border-radius: 10px;
+        padding: 40px 15px;
+        text-align: center;
+        margin-top: 20px;
+    
+    }
+    .search{
+        width: 80%;
+        display: flex;
+        align-items: left;
+        justify-content: space-between;
+    }
+    .search input{
+        border: 0;
+        outline: 0;
+        background: #ebfffc;
+        color: #555;
+        padding: 5px 5px;
+        height: 30px;
+        border-radius: 30px;
+        flex: 1;
+        margin-right: 10px;
+        font-size: 14px;
+       
+    }
+    .search button{
+        border: 0;
+        outline: 0;
+        background: #ebfffc;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+    }
+    .search button img{
+        width: 25px;
+        
+    }
+    .weather-icon{
+        width: 120px;
+        margin-top: 30px;
+    }
+    .weather h1{
+        font-size: 40px;
+        font-weight: 500;
+    }
+    .weather h2{
+        font-size: 25px;
+        font-weight: 400;
+        margin-top: -10px;
+    }
+    .detail{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px;
+        margin-top: 50px;
+    
+    }
+    .col{
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
+    .col img{
+        width: 30px;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+    .humidity, .wind{
+        font-size: 10px;
+        margin-top: 15px;
+    }
+    .detail p{
+        font-size: 10px;
+    }
+    .title{
+        text-align: center;
+        color: #fff;
+        margin-top: 70px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+
+}
